@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <script src="//unpkg.com/brain.js"></script>
+    <title>ML Reverse Text Color</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+        }
 
-    <script src="./app.js"></script>
+        body {
+            background-color: #fdf5eb;
+            text-align: center;
+        }
+        .wrapper{
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+    
+            height: 100vh;
+        }
+        .heading{
+            font-size: 1.3rem;
+        }
+        input{
+            margin: 10px 0;
+            background-color: transparent;
+        }
+        
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        
+        input[type="color"]::-webkit-color-swatch {
+            border-radius: 20px;
+            border: none;
+        }
+
+        #container{
+            font-family: 'Allison', cursive;
+            margin: 20px;
+            width: 90%;
+            height: 50vmin;
+            color: #E6B22C;
+            border: 2px solid #555;
+            border-radius: 1rem;
+            font-size: 2em;
+            font-weight: bolder;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1rem;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="heading">Reverse Text Color Based on Background Color Automatically</p>
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" value="#ff0000" />
+        <div id="container">
+            <h1>The Greatest</h1>
+            <p> What we think, we become. <br>
+                Determine your priorities and focus on them. <br>
+                “Nothing in life is worthwhile unless you take risks. Fall forward.
+            </p>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
