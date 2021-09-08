@@ -16,6 +16,12 @@ There are multiple ways to use this library:
 - CDN
 `<script src="//unpkg.com/brain.js"></script>`
 
+Project Preview [link 🤠](https://ullaskunder3.github.io/javascript-ml/)
+
+| Preview 2                         | Preview 2                       |
+|-----------------------------------|---------------------------------|
+|  ![preview1](./img/preview2.png)  | ![preview1](./img/preview1.png) |
+
 ## Training
 
 - Feedforward neural network (brain.NeuralNetwork)
