@@ -1,0 +1,15 @@
+{
+  "name": "brain-proj",
+  "version": "1.0.0",
+  "description": "colour suggestion for background color css",
+  "main": "app.js",
+  "dependencies": {
+    "brain.js": "^2.0.0-beta.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ullas kunder",
+  "license": "ISC"
+}
